@@ -3,6 +3,11 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+	$('.friend a').click(function(e) {
+		e.preventDefault();
+		$(this).find('h3').text(anagrammedName($(this).text()));
+	});
 })
 
 /*
@@ -13,8 +18,6 @@ function initializePage() {
 }
 
 function anagrammedName(name) {
-	// Thanks, Internet Anagram Server!
-	
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 
