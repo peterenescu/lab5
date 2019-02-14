@@ -4,11 +4,16 @@
 $(document).ready(function() {
 	initializePage();
 
-	$('.friend a').click(function(e) {
+//	$('.friend a').click(function(e) {
+//		e.preventDefault();
+//		$(this).find('h3').text(anagrammedName($(this).text()));
+//	});
+
+/*	$('.btn btn-default p').click(function(e) {
 		e.preventDefault();
-		$(this).find('h3').text(anagrammedName($(this).text()));
-	});
-})
+		console.log("Button!");
+	});*/
+});
 
 /*
  * Function that is called when the document is ready.
@@ -17,7 +22,7 @@ function initializePage() {
 	console.log("Javascript connected!");
 }
 
-function anagrammedName(name) {
+/*function anagrammedName(name) {
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 
@@ -46,4 +51,4 @@ function anagrammedName(name) {
 		console.log(name + " not known for anagramming.");
 		return name;
 	}
-}
+}*/
